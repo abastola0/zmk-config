@@ -5,6 +5,11 @@ https://github.com/petejohanson/zmk/blob/feat/pointers-move-scroll/app/include/d
 git clone -b feat/pointers-move-scroll https://github.com/petejohanson/zmk
 
 
+or just clone this repo 
+
+git clone -b move-scroll-pointer-working-version https://github.com/abastola0/zmk-config.git
+
+
 -- copy the ./runthistobuild.sh inside app which is inside the zmk repo
 
 -- setup native flashing as mentioned here: https://zmk.dev/docs/development/setup/native
