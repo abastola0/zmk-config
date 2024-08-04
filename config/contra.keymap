@@ -14,7 +14,7 @@
 #define LAY_1 1
 #define LAY_2 2
 #define LAY_3 3
-#define BT_CTRL 5
+#define BT_CTRL 4
 
 #define MOUSE_MOVE_MAX 3000                     /* <--- New max speed setting (default: 600) */
 #undef MOVE_UP
@@ -50,7 +50,7 @@
                 &kp TAB     &kp Q  &kp W  &kp E           &kp R  &kp T             &kp Y      &kp U  &kp I          &kp O    &kp P     &kp BSPC
                 &kp ESCAPE  &kp A  &kp S  &kp D           &kp F  &kp G             &kp H      &kp J  &kp K          &kp L    &kp SEMI  &kp ENTER
                 &kp LSHFT   &kp Z  &kp X  &kp C           &kp V  &kp B             &kp N      &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                &kp LCTRL   &none  &none  &kp LEFT_SHIFT  &mo 1  &kp LEFT_COMMAND  &kp SPACE  &mo 2  &kp RIGHT_ALT  &none    &mo 3     &none
+                &kp LCTRL   &none  &mo 4  &kp LEFT_SHIFT  &mo 1  &kp LEFT_COMMAND  &kp SPACE  &mo 2  &kp RIGHT_ALT  &none    &mo 3     &none
                 >;
         };
 
@@ -82,8 +82,8 @@
 
         bt_control {
             bindings = <
-                &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans      &trans      &trans  &trans
-                &trans      &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans      &trans      &trans  &trans
+                &none   &bt BT_CLR_ALL  &bt BT_CLR        &bt BT_SEL 0  &bt BT_SEL 1  &none  &bt BT_PRV  &none  &trans  &bt BT_NXT      &none      &none
+                &trans      &trans        &trans        &bt BT_DISC 0       &bt BT_DISC 1        &trans        &trans  &trans  &trans      &trans      &trans  &trans
                 &trans      &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans      &trans      &trans  &trans
                 &trans      &trans        &trans        &trans        &trans        &trans        &trans  &trans  &bt BT_PRV  &bt BT_NXT  &trans  &trans
                 >;
