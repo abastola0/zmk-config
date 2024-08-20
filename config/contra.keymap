@@ -27,7 +27,7 @@
 #define MOVE_RIGHT MOVE_X(MOUSE_MOVE_MAX)
 
 
-#define MOUSE_SCROLL_MAX 60                     
+#define MOUSE_SCROLL_MAX 35
 #undef SCRL_UP
 #undef SCRL_DOWN
 #undef SCRL_LEFT
